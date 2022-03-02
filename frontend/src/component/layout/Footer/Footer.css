@@ -1,7 +1,10 @@
 footer {
   margin-top: 10vmax;
   padding: 2vmax;
-  background-color: rgb(34, 33, 33);
+  /* background-color: rgb(34, 33, 33); */
+  background-position: center;
+  background-size: cover;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../../../images/footer.jpg");
   color: white;
   display: flex;
   align-items: center;

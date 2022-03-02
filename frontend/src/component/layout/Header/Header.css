@@ -12,7 +12,11 @@
 
 .navbar-link{
   color: white;
+  text-decoration: none;
   margin: 10px;
+}
+.navbar-link:hover{
+  color: rgb(255, 240, 107);
 }
 .navbar{
   z-index: 1;
