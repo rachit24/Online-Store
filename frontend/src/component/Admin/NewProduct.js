@@ -28,12 +28,9 @@ const NewProduct = ({ history }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Food",
-    "Clothing",
     "Accessories",
     "Toys",
-    "Grooming",
-    "First Aid",
+    "Decorative"
   ];
 
   useEffect(() => {

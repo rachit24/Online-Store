@@ -41,7 +41,7 @@ import UpdateUser from "./component/Admin/UpdateUser";
 import ProductReviews from "./component/Admin/ProductReviews";
 import Contact from "./component/layout/Contact/Contact";
 import About from "./component/layout/About/About";
-import NotFound from "./component/layout/Not Found/NotFound";
+// import NotFound from "./component/layout/Not Found/NotFound";
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -77,6 +77,7 @@ function App() {
       {stripeApiKey && (
         <Elements stripe={loadStripe(stripeApiKey)}>
           <ProtectedRoute exact path="/process/payment" component={Payment} />
+          {/* <ProtectedRoute exact path="/payment/process" component={Payment} /> */}
         </Elements>
       )}
 
@@ -179,11 +180,12 @@ function App() {
           component={ProductReviews}
         />
 
-        <Route
+        {/* <Route
           component={
-            window.location.pathname === "/payment/process" ? null : NotFound
+            window.location.pathname === "/process/payment" ? null : NotFound
           }
-        />
+        /> */}
+
       </Switch>
 
       <Footer />

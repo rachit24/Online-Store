@@ -38,12 +38,9 @@ const UpdateProduct = ({ history, match }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Food",
-    "Clothing",
     "Accessories",
     "Toys",
-    "Grooming",
-    "First Aid",
+    "Decorative"
   ];
 
   const productId = match.params.id;
@@ -134,7 +131,7 @@ const UpdateProduct = ({ history, match }) => {
             encType="multipart/form-data"
             onSubmit={updateProductSubmitHandler}
           >
-            <h1>Create Product</h1>
+            <h1>Update Product</h1>
 
             <div>
               <SpellcheckIcon />
@@ -223,7 +220,7 @@ const UpdateProduct = ({ history, match }) => {
               type="submit"
               disabled={loading ? true : false}
             >
-              Create
+              Update
             </Button>
           </form>
         </div>

@@ -15,7 +15,7 @@ const ConfirmOrder = ({ history }) => {
     0
   );
 
-  const shippingCharges = subtotal > 1000 ? 0 : 200;
+  const shippingCharges = subtotal > 1000 ? 0 : 100;
 
   const tax = subtotal * 0.18;
 
@@ -34,6 +34,7 @@ const ConfirmOrder = ({ history }) => {
     sessionStorage.setItem("orderInfo", JSON.stringify(data));
 
     history.push("/process/payment");
+    // history.push("/payment/process");
   };
 
   return (
@@ -81,7 +82,7 @@ const ConfirmOrder = ({ history }) => {
         {/*  */}
         <div>
           <div className="orderSummary">
-            <Typography>Order Summery</Typography>
+            <Typography>Order Summary</Typography>
             <div>
               <div>
                 <p>Subtotal:</p>
